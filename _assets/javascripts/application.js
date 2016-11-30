@@ -18,3 +18,8 @@ sr.reveal('.reveal', {
   reset: false,
   viewFactor: 0
 });
+sr.reveal('.img-reveal', {
+  origin: 'left',
+  distance: '200px',
+  duration: 1000
+});
