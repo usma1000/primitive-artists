@@ -3,7 +3,7 @@
 name: Primitive Artists
 paginate: 25
 paginate_path: "/posts/page/:num/"
-baseurl: primitive-artists/
+baseurl: /
 blog_theme: light # Or use dark
 
 # Optional settings
