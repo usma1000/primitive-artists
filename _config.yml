@@ -3,7 +3,7 @@
 name: Primitive Artists
 paginate: 25
 paginate_path: "/posts/page/:num/"
-url: # add site url http://example.com/
+url: https://usma1000.github.io/primitive-artists/
 blog_theme: light # Or use dark
 
 # Optional settings
