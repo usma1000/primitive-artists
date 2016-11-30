@@ -21,5 +21,6 @@ sr.reveal('.reveal', {
 sr.reveal('.img-reveal', {
   origin: 'left',
   distance: '200px',
-  duration: 1000
+  duration: 500,
+  easing: 'ease-in-out'
 });

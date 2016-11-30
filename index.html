@@ -7,11 +7,12 @@ description: "Chalk uses all the best tools and merges them into one premium blo
 <ul class="article-list">
   {% for post in paginator.posts %}
     <li class="article-list-item reveal">
+      <img src="{% asset_path '{{ post.featured-image }}' %}" alt="About Nielsen Ramon header image" class="img-reveal" />
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-        <h5>
+        <h3>
           {{ post.title }}
           <span class="icon icon-ios-arrow-thin-right"></span>
-        </h5>
+        </h3>
       </a>
       <p>{{ post.description }}</p>
       <div class="article-list-footer">
