@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Introducing chalk"
-description: "Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll."
+title: "Anand Upadhyay"
+description: "Freelancer"
 tags: "interview"
 featured-image: "about.jpg"
 ---

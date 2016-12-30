@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Chalk sample post with all elements"
-description: "Have a look at all the predesigned elements you can use in Chalk."
+title: "John Doe"
+description: "Lighting Artist at Pixar"
 og_image: "documentation/sample-image.jpg"
 tags: "interview"
 featured-image: 'og-image.jpg'

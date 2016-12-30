@@ -8,7 +8,7 @@ $(function () {
 
 // Initialize scrollreveal
 
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 sr.reveal('.reveal', {
   distance: '0',
   duration: 500,

@@ -150,3 +150,8 @@ img {
   color: $white;
   background-color: $gray-darkest;
 }
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
