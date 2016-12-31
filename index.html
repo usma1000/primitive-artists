@@ -1,8 +1,12 @@
 ---
-layout: default
+layout: home
 title: "Interviews with artists in the 3D Animation, VFX, and Game Art industries"
 description: "Chalk uses all the best tools and merges them into one premium blogging theme."
 ---
+<h2 class="content__title content__title--center">
+  <div id="rev-1" class="content__title__inner">Primitive</div><br/>
+  <div id="rev-2" class="content__title__inner content__title__inner--offset-1">Artists</div>
+</h2>
 
 <div class="article-list smooth">
   {% for post in paginator.posts %}
@@ -14,14 +18,14 @@ description: "Chalk uses all the best tools and merges them into one premium blo
         <div class="tilter__deco tilter__deco--overlay"></div>
         <figcaption class="tilter__caption">
           <h3 class="tilter__title">{{ post.title }}</h3>
-          <p class="tilter__description">{{ post.description }}</p>
+          <p class="tilter__description">{{ post.job-title }}</p>
         </figcaption>
         <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
           <path d="M20.5,20.5h260v375h-260V20.5z" />
         </svg>
       </figure>
     </a>
-    <div>
+    <div class="article-list-item">
       <div class="article-list-date">
         {{ post.date | date: "%B %-d, %Y" }}
       </div>
@@ -39,6 +43,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
           <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
         {% endfor %}
       </div>
+      <p>{{ post.description }}</p>
     </div>
   </div>
   {% endfor %}

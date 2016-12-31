@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Jane Smith"
+job-title: "Lighting Artist at Pixar"
 description: "Modeler at Blizzard"
 tags: "interview"
 featured-image: 'about.jpg'

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Anand Upadhyay"
+job-title: "Lighting Artist at Pixar"
 description: "Freelancer"
 tags: "interview"
 featured-image: "about.jpg"
