@@ -5,7 +5,7 @@ job-title: "Lighting Artist at Pixar"
 description: "Lighting Artist at Pixar"
 og_image: "documentation/sample-image.jpg"
 tags: "interview"
-featured-image: 'og-image.jpg'
+featured-image: 'documentation/sample-image.jpg'
 ---
 
 Chalk uses the default Jekyll syntax highlighting gem Rouge. It has a customized style for both light and dark theme.

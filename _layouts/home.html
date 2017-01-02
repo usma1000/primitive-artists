@@ -2,7 +2,47 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  <main role="main">
+  <main role="main" class="parallax">
+    <div class="banner">
+
+        <div class="parallax__layer parallax__layer--back">
+          <svg class="shapes">
+            <defs>
+              <linearGradient id="gradient">
+                <stop offset="0%" stop-color="#D83131" />
+                <stop offset="100%" stop-color="#EE44EC" />
+              </linearGradient>
+            </defs>
+            <circle cx="45%" cy="60" r="60" />
+            <polygon points="50 50, 200 100, 100 200"/>
+          </svg>
+        </div>
+        <div class="parallax__layer parallax__layer--middle">
+          <svg class="shapes">
+            <circle cx="30%" cy="30" r="30" />
+            <rect x="65%" y="10%" width="100" height="100"  />
+          </svg>
+        </div>
+        <div class="parallax__layer parallax__layer--front">
+          <svg class="shapes">
+            <circle cx="25%" cy="50%" r="120" />
+
+          </svg>
+        </div>
+
+      <h2 class="content__title content__title--center">
+        <div id="rev-1" class="content__title__inner">Primitive</div><br/>
+        <div id="rev-2" class="content__title__inner content__title__inner--offset-1">Artists</div>
+      </h2>
+
+      <div class="banner-sign-up">
+        <form action="">
+          <input type="email" name="mailinglist" id="mailinglistbanner">
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+
     <div class="grid grid-centered">
       <div class="grid-cell">
         {{ content }}
@@ -10,7 +50,7 @@
       </div>
     </div>
   </main>
-  
+
   {% include javascripts.html %}
 </body>
 </html>
