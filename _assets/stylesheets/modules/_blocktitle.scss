@@ -1,9 +1,9 @@
 .banner {
 	background: linear-gradient(135deg, #D83131 0%,#EE44EC 100%);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
 	position: relative;
-	padding-bottom: 60px;
+	padding: 60px 0 80px 0;
 }
 
 .parallax {
@@ -22,7 +22,7 @@
 }
 
 .parallax__layer--front {
-  transform: translateZ(0) scale(1);
+  transform: translateZ(-1px) scale(2);
 }
 .parallax__layer--middle {
   transform: translateZ(-2px) scale(3);
@@ -38,13 +38,43 @@
 }
 
 .banner-sign-up {
-	position: absolute;
-	bottom: -20px;
-	left: 20vw;
-	right: 20vw;
+	margin-left: 20vw;
+	margin-right: 20vw;
 	padding: 20px;
 	background-color: #fff;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	position: relative;
+	margin-top: -40px;
+
+	.button {
+		height: 44px;
+		border: none;
+	}
+
+	#email {
+	  width: 75%;
+	  background: #FDFCFB;
+	  font-family: inherit;
+	  color: #737373;
+	  letter-spacing: 1px;
+	  text-indent: 5%;
+	  border-radius: 5px 0 0 5px;
+	}
+
+
+	#submit {
+	  width: 24%;
+	  height: 46px;
+	  background: #D83131;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+		color: #fff;
+	  font-family: inherit;
+	  font-weight: bold;
+	  letter-spacing: 1px;
+	  border-radius: 0 5px 5px 0;
+	  cursor: pointer;
+	  transition: background .3s ease-in-out;
+	}
 }
 
 .content__title {
