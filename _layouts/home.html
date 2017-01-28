@@ -2,49 +2,28 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  <main role="main" class="parallax">
-    <div class="banner">
-
-        <div class="parallax__layer parallax__layer--back">
-          <svg class="shapes">
-            <defs>
-              <linearGradient id="gradient">
-                <stop offset="0%" stop-color="#D83131" />
-                <stop offset="100%" stop-color="#EE44EC" />
-              </linearGradient>
-            </defs>
-            <circle cx="45%" cy="60" r="60" />
-            <polygon points="50 50, 200 100, 100 200" />
-          </svg>
+  <main role="main">
+    <div class="hero">
+      <div class="grid grid-centered">
+        <div class="grid-cell">
+          <h2 class="hero-logo fadeIn">Primitve Artists</h2>
+          <div class="banner-sign-up fadeIn">
+            <h3>Let's learn together</h3>
+            <p>In this interview series, we feature artists in the 3D animation industry in hopes of spreading ideas, building inspiration, understanding our industry, and most importantly, promoting a culture of community.</p>
+            <hr>
+            <p>Sign up for email updates (no junk email, we promise!).</p>
+            <form action="" class="banner-form">
+              <input type="text" class="banner__form banner__form--email" id="email" name="email" placeholder="email@example.com">
+              <input type="submit" class="banner__form banner__form--submit" id="submit" value="SIGN UP">
+            </form>
+          </div>
         </div>
-        <div class="parallax__layer parallax__layer--middle">
-          <svg class="shapes">
-            <circle cx="33%" cy="30" r="30" />
-            <rect x="65%" y="10%" width="100" height="100"  />
-          </svg>
-        </div>
-        <div class="parallax__layer parallax__layer--front">
-          <svg class="shapes">
-            <circle cx="25%" cy="25%" r="120" />
-          </svg>
-        </div>
+      </div>
 
-      <h2 class="content__title content__title--center">
-        <div id="rev-1" class="content__title__inner">Primitive</div><br/>
-        <div id="rev-2" class="content__title__inner content__title__inner--offset-1">Artists</div>
-      </h2>
-
+      <b class="hero__ball"></b>
+      <b class="hero__ball hero__ball--small"></b>
     </div>
-    <div class="banner-sign-up">
-      <h3>Learn from the pros</h3>
-      <p>In this interview series, we feature artists in the 3D animation industry in hopes of spreading ideas, building inspiration, understanding our industry, and most importantly, promoting a culture of community.</p>
-      <hr>
-      <p>Sign up for email updates (no junk email, we promise!).</p>
-      <form action="">
-        <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
-        <input type="submit" class="button" id="submit" value="SIGN UP">
-      </form>
-    </div>
+
     <div class="grid grid-centered">
       <div class="grid-cell">
         {{ content }}
