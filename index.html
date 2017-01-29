@@ -7,42 +7,42 @@ description: "Chalk uses all the best tools and merges them into one premium blo
 
 <div class="article-list smooth">
   {% for post in paginator.posts %}
-  <div class="clearfix">
-    <a href="{{ post.url | relative_url }}" class="tilter tilter--1">
-      <figure class="tilter__figure">
-        <img src="{% asset_path '{{ post.featured-image }}' %}" alt="artwork by {{ post.title }}" class="tilter__image" />
-        <!-- <div class="tilter__deco tilter__deco--shine"><div></div></div>
-        <div class="tilter__deco tilter__deco--overlay"></div> -->
-        <figcaption class="tilter__caption">
-          <h3 class="tilter__title">{{ post.title }}</h3>
-          <p class="tilter__description">{{ post.job-title }}</p>
-        </figcaption>
-        <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-          <path d="M20.5,20.5h260v375h-260V20.5z" />
-        </svg>
-      </figure>
-    </a>
-    <div class="article-list-item">
-      <div class="article-list-date">
-        {{ post.date | date: "%B %-d, %Y" }}
+
+  <section class="article-list__article">
+    <div class="article-list__image">
+      <div class="article-list__image__container">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{% asset_path '{{ post.featured-image }}' %}" alt="artwork by {{ post.title }}" class="article__image" />
+        </a>
       </div>
-      <div class="article-list-length">
-        {% capture words %}
-          {{ post.content | number_of_words }}
-        {% endcapture %}
-        {% unless words contains "-" %}
-          {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-        {% endunless %}
-      </div>
-      <div class="article-list-tags">
-        Category:
-        {% for tag in post.tags %}
-          <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-      </div>
-      <p>{{ post.description }}</p>
     </div>
-  </div>
+    <div class="article-list__info">
+      <div class="article-list__info__container">
+        <a href="{{ post.url | relative_url }}">
+          <h3 class="article-list__interviewee">{{ post.title }}</h3>
+        </a>
+        <p class="article-list__job-title">{{ post.job-title }}</p>
+        <div class="article-list-date">
+          {{ post.date | date: "%B %-d, %Y" }}
+        </div>
+        <div class="article-list-length">
+          {% capture words %}
+            {{ post.content | number_of_words }}
+          {% endcapture %}
+          {% unless words contains "-" %}
+            {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+          {% endunless %}
+        </div>
+        <div class="article-list-tags">
+          Category:
+          {% for tag in post.tags %}
+            <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
+        <p>{{ post.description }}</p>
+      </div>
+    </div>
+  </section>
   {% endfor %}
 
   {% if paginator.total_pages > 1 %}

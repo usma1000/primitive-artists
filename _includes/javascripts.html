@@ -1,5 +1,4 @@
 {% javascript vendor %}
-{% javascript tilter %}
 {% javascript application %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
@@ -18,80 +17,3 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 {% endif %}
-
-
-<script>
-	(function() {
-		var tiltSettings = [
-		{},
-		{
-			movement: {
-				imgWrapper : {
-					translation : {x: 10, y: 10, z: 30},
-					rotation : {x: 0, y: -10, z: 0},
-					reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
-				},
-				lines : {
-					translation : {x: 10, y: 10, z: [0,70]},
-					rotation : {x: 0, y: 0, z: -2},
-					reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
-				},
-				caption : {
-					rotation : {x: 0, y: 0, z: 2},
-					reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
-				},
-				overlay : {
-					translation : {x: 10, y: -10, z: 0},
-					rotation : {x: 0, y: 0, z: 2},
-					reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
-				},
-				shine : {
-					translation : {x: 100, y: 100, z: 0},
-					reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
-				}
-			}
-		}];
-
-		function init() {
-			var idx = 0;
-			[].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) {
-				idx = pos%2 === 0 ? idx+1 : idx;
-				new TiltFx(el, tiltSettings[0]);
-			});
-		}
-
-    init();
-
-
-	})();
-</script>
-
-<script>
-	(function() {
-		function reveal_init() {
-
-			var rev1 = new RevealFx(document.querySelector('#rev-1'), {
-				revealSettings : {
-					bgcolor: '#fff',
-					onCover: function(contentEl, revealerEl) {
-						contentEl.style.opacity = 1;
-					}
-				}
-			});
-			rev1.reveal();
-
-			var rev2 = new RevealFx(document.querySelector('#rev-2'), {
-				revealSettings : {
-					bgcolor: '#fff',
-					delay: 250,
-					onCover: function(contentEl, revealerEl) {
-						contentEl.style.opacity = 1;
-					}
-				}
-			});
-			rev2.reveal();
-    }
-
-    reveal_init();
-  })();
-</script>
