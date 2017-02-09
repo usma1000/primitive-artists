@@ -24,3 +24,10 @@ sr.reveal('.img-reveal', {
   duration: 500,
   easing: 'ease-in-out'
 });
+
+$('.js-tilt').tilt({
+    maxTilt: 10,
+    perspective: 1000
+});
+
+var rellax = new Rellax('.rellax');

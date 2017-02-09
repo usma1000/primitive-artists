@@ -3,3 +3,5 @@
 //= require fluidbox
 //= require scrollreveal
 //= require vendor/retina.js
+//= require vendor/tilt.jquery.min.js
+//= require vendor/rellax.min.js

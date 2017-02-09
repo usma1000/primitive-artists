@@ -11,9 +11,11 @@ description: "Chalk uses all the best tools and merges them into one premium blo
   <section class="article-list__article">
     <div class="article-list__image">
       <div class="article-list__image__container">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{% asset_path '{{ post.featured-image }}' %}" alt="artwork by {{ post.title }}" class="article__image" />
-        </a>
+        <div class="article-list__image__tilter js-tilt" data-tilt>
+          <a href="{{ post.url | relative_url }}">
+            <img src="{% asset_path '{{ post.featured-image }}' %}" alt="artwork by {{ post.title }}" class="article__image" />
+          </a>
+        </div>
       </div>
     </div>
     <div class="article-list__info">
