@@ -1,15 +1,14 @@
 ### Development
 
-    bundle exec jekyll serve
+    `bundle exec jekyll serve`
 
 ### Deploy to GitHub Pages
 
-    bin/deploy
+    Push up new changes to master.
+    Run `bin/deploy`
 
 ### ToDo
 
     Email form placeholder text color
-    Email form button glow on hover
     Set up mailchimp
-    Style footer
     Style post pages

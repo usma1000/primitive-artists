@@ -13,10 +13,13 @@
   text-transform: uppercase;
   text-align: center;
   margin: 60px 0;
+  @include breakpoint(extra-small) {
+    font-size: 2em;
+  };
 }
 
 .banner-sign-up {
-  background-color: rgba(255, 150, 83, 0.8);
+  background-color: rgba(255, 150, 83, .8);
   color: white;
   padding: 40px 40px 0;
   margin: 60px 0;
@@ -45,7 +48,12 @@
 }
 .banner__form--submit {
   color: white;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, .5);
+  cursor: pointer;
+  transition: all .4s;
+  &:hover {
+    background-color: darken(red, 1%);
+  }
 }
 
 .hero__ball {
