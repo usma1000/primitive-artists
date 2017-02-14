@@ -28,7 +28,7 @@
     };
   }
   .article-list__image__container {
-    margin: -20px 10% 20px 60px;
+    margin: -20px 15% 20px 60px;
     @include breakpoint(medium) {
       margin: 0;
     };
@@ -52,7 +52,7 @@
 
   .article-list__image__container {
     // width: 70%;
-    margin: -20px 60px 20px 10%;
+    margin: -20px 60px 20px 15%;
     transition: all .5s;
     @include breakpoint(medium) {
       width: 100%;
@@ -62,7 +62,7 @@
 
   .article-list__image__tilter {
     background-image: linear-gradient(45deg, #7f4cf9 0%, #d041cb 100%);
-    padding: 2em;
+    padding: 1em;
     transform-style: preserve-3d;
     @include breakpoint(medium) {
       background-image: none;
@@ -100,7 +100,7 @@
     a {
       color: #fff;
       &:hover {
-        color: black;
+        color: #aaa;
       }
     }
   }

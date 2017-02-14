@@ -2,7 +2,7 @@
 layout: post
 title: "John Doe"
 job-title: "Lighting Artist at Pixar"
-description: "Lighting Artist at Pixar"
+description: "John shares what steps he took to get his dream job."
 og_image: "documentation/sample-image.jpg"
 tags: "interview"
 featured-image: 'documentation/sample-image.jpg'
