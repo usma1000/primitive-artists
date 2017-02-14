@@ -3,7 +3,7 @@
 name: Primitive Artists
 paginate: 25
 paginate_path: "/posts/page/:num/"
-baseurl: /primitive-artists
+baseurl: /
 blog_theme: light # Or use dark
 
 # Optional settings
@@ -14,7 +14,7 @@ rss_enabled: true # Change to false if not
 social:
   facebook: # Add your Facebook handle
   twitter: # Add your Twitter handle
-  email: usma1000@gmail.com
+  email: aucreative@gmail.com
 
 # Important settings (change at own risk)
 
