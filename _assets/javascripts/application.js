@@ -19,9 +19,9 @@ sr.reveal('.reveal', {
   viewFactor: 0
 });
 sr.reveal('.img-reveal', {
-  origin: 'left',
-  distance: '200px',
-  duration: 500,
+  origin: 'bottom',
+  distance: '100px',
+  duration: 300,
   easing: 'ease-in-out'
 });
 

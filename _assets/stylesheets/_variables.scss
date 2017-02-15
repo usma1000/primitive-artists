@@ -5,9 +5,10 @@
 // Typography
 // =============================================================================
 
-$sans-serif: "Lato", Helvetica, Arial, sans-serif;
+$body-serif: "Lora", serif;
 $serif: "Abril Fatface", Courier, serif;
-$base-font-family: $sans-serif;
+$title-serif: $serif;
+$base-font-family: $body-serif;
 $base-font-weight: 400;
 $base-font-weight-bold: 700;
 

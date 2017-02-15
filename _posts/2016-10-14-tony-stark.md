@@ -8,12 +8,6 @@ tags: "interview"
 featured-image: 'documentation/sample-image.jpg'
 ---
 
-{% include image.html path="documentation/sample-image.jpg" path-detail="documentation/sample-image@2x.jpg" alt="Sample image" %}
-
-{{ post.featured-image }}
-
-## {{ post.title }}
-
 This is where I will write a custom introduction for each person. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptatem perspiciatis exercitationem doloremque non facere, pariatur fuga quisquam nobis. Fugiat neque, ad aliquid facere itaque officia voluptatibus, impedit commodi! Animi?
 
 {% include image.html path="documentation/sample-image.jpg" path-detail="documentation/sample-image@2x.jpg" alt="Sample image" %}
@@ -48,4 +42,3 @@ Videos for demo reels/clips can be added and are responsive by default (4x3 by d
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="https://www.youtube.com/embed/vO7m8Hre72E?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 </div>
-

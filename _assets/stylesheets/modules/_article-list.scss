@@ -99,9 +99,13 @@
     };
     a {
       color: #fff;
-      &:hover {
-        color: #aaa;
-      }
+    }
+    .article-list-tags a:hover {
+      color: #aaa;
+    }
+    .article-list__job-title {
+      font-size: 1.2em;
+      font-weight: bold;
     }
   }
   .article-list__interviewee {
