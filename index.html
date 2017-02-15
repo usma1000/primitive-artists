@@ -12,7 +12,7 @@ description: "Interviews with artists in the 3D Animation, VFX, and Game Art ind
     <div class="article-list__image">
       <div class="article-list__image__container">
         <div class="article-list__image__tilter js-tilt" data-tilt>
-          <a href="{{ post.url | relative_url }}">
+          <a href="{{ post.url }}">
             <img src="{% asset_path '{{ post.featured-image }}' %}" alt="artwork by {{ post.title }}" class="article__image" />
           </a>
         </div>
@@ -20,7 +20,7 @@ description: "Interviews with artists in the 3D Animation, VFX, and Game Art ind
     </div>
     <div class="article-list__info">
       <div class="article-list__info__container">
-        <a href="{{ post.url | relative_url }}">
+        <a href="{{ post.url }}">
           <h3 class="article-list__interviewee">{{ post.title }}</h3>
         </a>
         <p class="article-list__job-title">{{ post.job-title }}</p>
