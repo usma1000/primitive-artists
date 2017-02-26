@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Matthew Murdock"
 job-title: "Freelancer"
 description: "Matthew reminds us that we got into this profession because it's fun."

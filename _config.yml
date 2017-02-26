@@ -8,15 +8,15 @@ blog_theme: light # Or use dark
 
 # Optional settings
 
-discus_identifier: # Add your Disqus identifier
+discus_identifier: primitiveartists
 ga_analytics: # Add your GA Tracking Id
 rss_enabled: true # Change to false if not
 social:
   facebook: # Add your Facebook handle
   twitter: # Add your Twitter handle
-  email: aucreative@gmail.com
+  email: anand@primitiveartists.com
 
-# Important settings (change at own risk)
+# Important settings
 
 assets:
   compress:
