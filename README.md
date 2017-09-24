@@ -1,6 +1,7 @@
 ## Development
 
     `bundle exec jekyll serve`
+    go to localhost:4000
 
 ## Deploy to GitHub Pages
 
@@ -11,13 +12,8 @@
 ### Pre-launch ToDo
 
     Figure out pagination
-    Email form placeholder text color
     Set up mailchimp
-    Style post pages
-    Add better dummy content
     Add analytics
-    Add custom domain name
-    Add Disqus
     Set up email account
     Add email sign up in footer
 
@@ -25,69 +21,8 @@
 
     Add google ads
     Set up social media accounts
-    Refactor Sass variables
+    Refactor Sass
 
-
-Chalk uses the default Jekyll syntax highlighting gem Rouge. It has a customized style for both light and dark theme.
-Use the `highlight` tag to use the following code highlighting your preferred language:
-
-{% highlight html %}
-<!-- This is a comment -->
-<div class="grid">
-  <h1>This is a heading</h1>
-  <p>
-    This is a paragraph text.
-  </p>
-</div>
-{% endhighlight %}
-
-## Headings
-
-Chalk includes 3 headings by default:
-
-## Heading first level
-### Heading second level
-#### Heading third level
-
-{% highlight markdown %}
-## Heading first level
-### Heading second level
-#### Heading third level
-{% endhighlight %}
-
-## Lists
-
-Unordered list example:
-* Unordered list item 1
-* Unordered list item 2
-* Unordered list item 3
-* Unordered list item 4
-
-Ordered list example:
-1. Ordered list item 1
-2. Ordered list item 1
-3. Ordered list item 1
-4. Ordered list item 1
-
-{% highlight markdown %}
-* Unordered list item 1
-* Unordered list item 2
-
-1. Order list item 1
-2. Order list item 1
-{% endhighlight %}
-
-## Quotes
-
-A quote looks like this:
-
-> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna.
-
-{% highlight markdown %}
-> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna.
-{% endhighlight %}
 
 ## Media
 

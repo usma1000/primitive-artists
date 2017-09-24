@@ -123,6 +123,11 @@
       font-size: 2em;
     };
   }
+  .article-list-length,
+  .article-list-date,
+  .article-list-tags {
+    font-size: $small-font-size;
+  }
 }
 
 
