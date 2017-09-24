@@ -1,0 +1,1 @@
+$(function(){$(".fluidbox-trigger").fluidbox()}),window.sr=ScrollReveal({reset:!1}),sr.reveal(".reveal",{distance:"0",duration:500,easing:"ease-in-out",origin:"top",scale:1,reset:!1,viewFactor:0}),sr.reveal(".img-reveal",{origin:"bottom",distance:"100px",duration:300,easing:"ease-in-out"}),$(".js-tilt").tilt({maxTilt:10,perspective:1e3});var rellax=new Rellax(".rellax");
